@@ -19,15 +19,16 @@ import org.example.domainmodel.domainmodel.Feature
  */
 class DomainmodelGenerator extends AbstractGenerator {
 
-	@Inject extension IQualifiedNameProvider
+
+	//@Inject extension IQualifiedNameProvider
 
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
-		for (e: resource.allContents.toIterable.filter(Entity)) {
-			fsa.generateFile(e.fullyQualifiedName.toString("/")+".java"
-				, e.compile)
-		}
+//		for (e: resource.allContents.toIterable.filter(Entity)) {
+//			fsa.generateFile(e.fullyQualifiedName.toString("/")+".java"
+//				, e.compile)
+//		}
 	}
-	
+/*	
 	def compile(Entity e) '''
 		«IF e.eContainer.fullyQualifiedName != null»
 			package «e.eContainer.fullyQualifiedName»;
@@ -54,4 +55,5 @@ class DomainmodelGenerator extends AbstractGenerator {
 		}
 		
 	'''
-}
+ */
+ }

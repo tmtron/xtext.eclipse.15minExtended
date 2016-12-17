@@ -15,6 +15,7 @@ import org.example.domainmodel.domainmodel.Feature
  */
 class DomainmodelValidator extends AbstractDomainmodelValidator {
 	
+/*	
 	@Check
 	def void checkNameStartsWithCapital(Entity entity) {
 		if (!Character.isUpperCase(entity.name.charAt(0))) {
@@ -38,7 +39,7 @@ class DomainmodelValidator extends AbstractDomainmodelValidator {
 		}
 		
 	}
-	
+*/	
 //	public static val INVALID_NAME = 'invalidName'
 //
 //	@Check
